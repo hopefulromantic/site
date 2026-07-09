@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Playground</title>
+    
+    <!-- 1. FONTS IMPORT (Add Google or Fontshare links here) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=melodrama@400;500;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+    
+    <style>
+        /* 2. GLOBAL COLOURS (Change these hex codes to update everything) */
+        :root {
+            --bg-color: #105666;       /* The deep background color */
+            --primary-accent: #fbceb7; /* Main title / highlight color */
+            --text-color: #ecf2d8;     /* Standard readable description text */
+            --border-style: 1px solid rgba(236, 242, 216, 0.3);
+        }
+
+        /* 3. BASE WEBSITE RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 40px 20px;
+        }
+
+        /* 4. TITLE & HERO BLOCK */
+        .header-section {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            border-bottom: var(--border-style);
+        }
+        .small-tag {
+            font-family: 'Meddon', cursive;
+            font-size: 28px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        .main-title {
+            font-family: 'Melodrama', serif;
+            font-size: 54px;
+            color: var(--primary-accent);
+            letter-spacing: 2px;
+        }
+
+        /* 5. CONTENT CARD BOXES */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: var(--border-style);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .card-title {
+            font-family: 'Melodrama', serif;
+            font-size: 24px;
+            color: var(--primary-accent);
+            margin-bottom: 15px;
+        }
+        .card-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO HEADER SECTION -->
+    <div class="header-section">
+        <div class="small-tag">S+</div>
+        <h1 class="main-title">Safiyyah's Space</h1>
+    </div>
+
+    <!-- MAIN DISPLAY BOXES -->
+    <div class="container">
+        
+        <!-- CARD ONE -->
+        <div class="card">
+            <h2 class="card-title">01 / Typography Practice</h2>
+            <p class="card-text">
+                This box is perfect for testing fonts. The heading uses "Melodrama" and this paragraph description text uses "DM Sans". Try changing font weights or alignment rules to see how it moves.
+            </p>
+        </div>
+
+        <!-- CARD TWO -->
+        <div class="card">
+            <h2 class="card-title">02 / Layout Practice</h2>
+            <p class="card-text">
+                This is a second structural block. You can safely duplicate this entire "div class="card"" block in your HTML file below whenever you want to add a brand new section to your page.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
